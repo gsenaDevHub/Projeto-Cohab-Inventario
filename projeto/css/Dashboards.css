@@ -195,17 +195,54 @@ article {
 }
 
 .title {
+    margin: 10px 10px 10px;
+    font-size: var(--font-grande);
+    font-family: var(--fonte-secundaria);
+    font-weight: bolder;
     width: 100%;
 }
 
-figure {
+article figure {
     flex: 1;
     height: 150px;
-    border: #0F172A solid 1px;
+    padding: 10px;
+    border: var(--cor-borda) solid 1px;
     display: inline-block;
+    text-align: center;
+    margin: 5px 10px;
+    background-color: var(--cor-card);
+    transition: var(--transition);
+}
+
+article figure img {
+    width: 30px;
+}
+
+article figure h4 {
+    margin-top: 10px;
+    font-size: var(--font-gigante);
+}
+
+article figure:hover,
+.grafico:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 .grafico {
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin: 10px;
+    background-color: var(--cor-card);
+    padding: 20px;
     flex: 1;
-    height: 150px;
+    border: var(--cor-borda) solid 1px;
+    transition: var(--transition);
+}
+
+.grafico label {
+    font-size: var(--font-grande);
+    font-weight: bold;
+    font-family: var(--fonte-secundaria);
 }
